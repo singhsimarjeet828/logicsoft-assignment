@@ -756,17 +756,17 @@ video {
   
 
   /* ================== Mobile Base CSS ================== */
-  /* html {
-    overflow: hidden;
+   html {
+    overflow-x: hidden;
     height: 100%;
-    -webkit-overflow-scrolling: touch;
+
   }
 
-  body {
+  /* body {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-  } */
+  }  */
 
   body.wsactive {
     overflow: hidden;
