@@ -335,7 +335,7 @@ color: #333333;
 
 @media (max-width: 567px) {
     .te_item{
-        margin: 0 !important;
+        margin: 0 8px !important;
     }
     .te_item p{
         font-size: 14px;
@@ -349,7 +349,7 @@ color: #333333;
         margin-top: 0;
     }
     .slide{
-        margin: 0px 0px;
+        margin: 0px 08px;
       }
 }
 
