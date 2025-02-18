@@ -333,3 +333,23 @@ color: #333333;
       }
 }
 
+@media (max-width: 567px) {
+    .te_item{
+        margin: 0 !important;
+    }
+    .te_item p{
+        font-size: 14px;
+    }
+    .img_content .l_img{
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .img_content .content{
+        width: calc(100% - 100px) !important;
+        margin-top: 0;
+    }
+    .slide{
+        margin: 0px 0px;
+      }
+}
+

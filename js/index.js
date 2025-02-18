@@ -1,8 +1,6 @@
 gsap.set(".parallax-element", { yPercent: 0 });
-AOS.init({
-    once: true, // Ensures animations trigger on scroll
-    disable: false
-  });
+AOS.init();
+
 document.addEventListener("DOMContentLoaded", function() {
 
     $('.slider').slick({
@@ -28,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             settings: {
               slidesToShow: 2, // 2 slides for tablet
               slidesToScroll: 1,
-              dots: true,
+              dots: false,
               arrows: true
             }
           },
@@ -37,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
             settings: {
               slidesToShow: 1, // 1 slide for mobile
               slidesToScroll: 1,
-              dots: true,
+              dots: false,
               arrows: true
             }
           }
@@ -70,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
               slidesToShow: 2, // 2 slides for tablet
               slidesToScroll: 1,
               dots: true,
-              arrows: true,
+              arrows: false,
               centerPadding: '100px', 
             }
           },
@@ -80,8 +78,8 @@ document.addEventListener("DOMContentLoaded", function() {
               slidesToShow: 1, // 1 slide for mobile
               slidesToScroll: 1,
               dots: true,
-              arrows: true,
-              centerPadding: '50px', 
+              arrows: false,
+              centerPadding: '0px', 
             }
           }
         ]
@@ -102,7 +100,7 @@ gsap.to(".parallax-element", {
     },
   });
   
-});
+
 
  // Function to start a counter
  function startCounter(element, targetValue) {
@@ -138,7 +136,7 @@ counters.forEach(counter => {
 const progressBarFill = document.getElementById('progress-bar-fill');
 
 // Event listener to track scrolling
-document.addEventListener("DOMContentLoaded", function() {
+
 window.addEventListener('scroll', () => {    
   // Calculate the total scrollable height and the current scroll position
   const scrollTop = window.scrollY;
@@ -150,7 +148,6 @@ window.addEventListener('scroll', () => {
   // Update the width of the progress bar
   progressBarFill.style.height = `${scrollPercentage}%`;
 });
-})
 var stickyNavTop = $('#header').offset().top + 600;
 var stickyNav = function(){
   var scrollTop = $(window).scrollTop();
@@ -163,6 +160,8 @@ var stickyNav = function(){
 $(window).scroll(function() { 
 stickyNav();
   });  
+
+});
 jQuery(function () {
     document.addEventListener("touchstart", function () {}, false);
       jQuery("body").wrapInner('<div class="wsmenucontainer" />');
@@ -222,4 +221,3 @@ jQuery(function () {
     });
   }());
   
-

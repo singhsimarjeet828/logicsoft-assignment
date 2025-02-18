@@ -756,7 +756,7 @@ video {
   
 
   /* ================== Mobile Base CSS ================== */
-  html {
+  /* html {
     overflow: hidden;
     height: 100%;
     -webkit-overflow-scrolling: touch;
@@ -766,7 +766,7 @@ video {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-  }
+  } */
 
   body.wsactive {
     overflow: hidden;
